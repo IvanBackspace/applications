@@ -1,0 +1,145 @@
+body {
+    background-color: #e9ecef;
+    font-family: system-ui;
+    font-size: 24px;
+}
+
+#applicationForm input {
+    margin-bottom: 5px;
+}
+
+#applicationForm{
+    margin: 42px 33px 20px 33px;
+}
+.text{
+    margin: 10px 33px 20px 33px;
+}
+h3{
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 348px;
+}
+
+input , #openModalButton{
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #000;
+    width: 254px;
+}
+
+.submitBtn {
+    width: 282px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+#openModalButton {
+    width: 282px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #b1b3b5;
+    border-radius: 17px;
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    --bs-btn-close-opacity: 0.5;
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black; /
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #b1b3b5;
+    border-radius: 17px;
+    display: none;
+}
+
+.popup-content {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+button#closePopup {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background: #0d6efd;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#getDataButton {
+    background-color: #0d6efd;
+    color: white;
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 254px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #openModalButton, #getDataButton {
+        width: 100%;
+    }
+    #getDataButton {
+        width: 100%;
+    }
+}
